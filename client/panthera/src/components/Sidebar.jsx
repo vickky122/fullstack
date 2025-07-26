@@ -6,8 +6,14 @@ export default function Sidebar() {
       <div>
         {/* Panthera Logo */}
         <div className="flex items-center gap-2 mb-6">
-          <div className="text-3xl">🐾</div>
-          <h1 className="text-2xl font-bold text-blue-800">Panthera</h1>
+          {/* <div className="text-3xl">🐾</div>
+          <h1 className="text-2xl font-bold text-blue-800">Panthera</h1> */}
+          <img src="https://res.cloudinary.com/dt8emxboh/image/upload/v1753535804/w0smz6nikuxhkvtymlzc.png" alt ="Panthera Logo" className="w-40 h30" />
+        </div>
+
+        {/*Search */}
+        <div className="mb-6">
+          <input type="text" placeholder="Search" className="w-full p-2 border border-gray-300 rounded-md" />
         </div>
 
         {/* Section */}
