@@ -1,5 +1,8 @@
 import React, { useMemo } from "react";
 import { useTable, useSortBy, useGlobalFilter } from "react-table";
+// import { MapContainer, TileLayer, Marker, Popup, FeatureGroup } from "react-leaflet";
+// import { EditControl } from "react-leaflet-draw";
+
 
 export default function AcquisitionView() {
   const data = useMemo(() => [
@@ -57,14 +60,24 @@ export default function AcquisitionView() {
 
       {/* Embedded Google Map */}
       <div className="bg-white rounded-xl shadow overflow-hidden">
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.636026827418!2d-73.99108329322593!3d40.73061035632244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af180af52d%3A0x77f1a3cf36b593d1!2sNew%20York%20City!5e0!3m2!1sen!2sin!4v1617184324034!5m2!1sen!2sin"
           width="100%"
           height="300"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
-        ></iframe>
+        ></iframe> */}
+
+        <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112105.38001522316!2d76.96163236572383!3d28.4594966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18824e83f3fb%3A0x3e4a656256a5b799!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1692213324321!5m2!1sen!2sin"
+  width="100%"
+  height="300"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+></iframe>
+
       </div>
 
       {/* Dropdown Filters */}
